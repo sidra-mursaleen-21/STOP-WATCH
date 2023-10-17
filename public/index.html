@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>STOP WATCH</title>
+  </head>
+  <body>
+    <h1>stop watch</h1>
+    <div class="container">
+      <div class="minicontainer"></div>
+      <div id="box">
+        <input readonly placeholder="00" type="text" id="minute"/>:
+        <input readonly placeholder="00" type="text" id="second"/>:
+        <input readonly placeholder="00" type="text" id="millisecond"/>
+      </div>
+      <div class="minicontainer2">
+        <button onclick="start()" id="button1" type="button">START</button>
+        <button onclick="reset()" id="button2" type="button">RESET</button>
+        <button onclick="stop()" id="button3" type="button">STOP</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
